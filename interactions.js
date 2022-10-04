@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 $.ajax({
                     url: "./interactions.php",
                     datatype: "json",
-                    type: "GET",
+                    type: "POST",
                     data: {json: JSON.stringify(data)},
                     success: function () {alert("Thanks!"); },
                     failure: function() {alert("Error!");}
