@@ -41,15 +41,16 @@ document.addEventListener("DOMContentLoaded", () => {
             } else {
                 data[word] = definition;
                 console.log(data);
+                json = JSON.stringify(data);
                 response.innerHTML = "¡Gracias!";
                 $.ajax({
                     url: "./interactions.php",
                     datatype: "json",
                     type: "POST",
-                    data: 'json='+JSON.stringify(data),
+                    data: 'json='+json,
                     success: function () {alert("Thanks!"); },
                     failure: function() {alert("Error!");}
-                })
+                });
                 
             }
         })
