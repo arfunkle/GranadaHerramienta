@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     url: "./interactions.php",
                     datatype: "json",
                     type: "POST",
-                    data: {json: JSON.stringify(data)},
+                    data: 'json='+JSON.stringify(data),
                     success: function () {alert("Thanks!"); },
                     failure: function() {alert("Error!");}
                 })
