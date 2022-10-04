@@ -1,0 +1,13 @@
+.answer {
+    float: right;
+    
+}
+.question {
+    margin: .5%;
+    padding: 10px;
+    border: 3px black solid;
+}
+.correction {
+    float: right;
+    margin-right: 5%;
+}

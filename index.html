@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Granada Herramienta para Estudiar</title>
+        <script type="text/javascript" src="./interactions.js"></script>
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <link rel="stylesheet" href="index.css" type="text/css">
+    </head>
+    <body>
+        <div id="quiz">
+            <div id="prompt">
+                <span>Prueba tus habilidades!</span>
+                <span><button id="start">Empezar</button></span>
+            </div>
+            <div id="questions" hidden>
+                <div class="question" id="0"><span>Test</span><span class="answer"><input placeholder="Que es la palabra..."></span><span class="correction"></span></div>
+                <br>
+                <div class="question" id="1"><span>Test</span><span class="answer"><input placeholder="Que es la palabra..."></span><span class="correction"></span></div>
+                <br>
+                <div class="question" id="2"><span>Test</span><span class="answer"><input placeholder="Que es la palabra..."></span><span class="correction"></span></div>
+                <br>
+                <div class="question" id="3"><span>Test</span><span class="answer"><input placeholder="Que es la palabra..."></span><span class="correction"></span></div>
+                <br>
+                <div class="question" id="4"><span>Test</span><span class="answer"><input placeholder="Que es la palabra..."></span><span class="correction"></span></div>
+                <br>
+                <button id="finish">Enviar</button>
+            </div>
+        </div>
+        <br>
+        <div id="add">
+            ¿Quieres añadir una palabra?
+            <span><input id="word" placeholder="Palabra"><input width="60%" id="definition" placeholder="Definición"><button id="enter">Enviar</button></span>
+        </div>
+        <div id="response"></div>
+    </body>
+</html>
